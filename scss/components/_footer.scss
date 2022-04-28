@@ -1,0 +1,63 @@
+.footer {
+	&__container {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		width: 82%;
+		@media screen and (max-width: 641px) {
+			width: 90%;
+			flex-direction: column;
+			gap: 2.5rem;
+			img {
+				width: 100%;
+			}
+		}
+		.networking {
+			align-items: center;
+			display: flex;
+			gap: 1.5rem;
+			@media screen and (max-width: 641px) {
+				gap: 2.5rem;
+			}
+		}
+		.payment-methods {
+			align-items: center;
+			display: flex;
+			gap: 1.5rem;
+			@media screen and (max-width: 641px) {
+				gap: 2.5rem;
+			}
+		}
+		.copyright {
+			align-items: center;
+			display: flex;
+			gap: 1.5rem;
+			@media screen and (max-width: 641px) {
+				gap: 2.5rem;
+			}
+			.copyright-wrapper {
+				display: -ms-grid;
+				display: grid;
+				gap: 0.2rem;
+				h4 {
+					color: white;
+					font-size: 1rem;
+					font-weight: 400;
+				}
+				img {
+					width: 70%;
+					@media screen and (max-width: 641px) {
+						width: 100%;
+					}
+				}
+			}
+		}
+		img {
+			width: 70%;
+		}
+	}
+	background-color: #353535;
+	padding: 3rem;
+	width: 100%;
+}

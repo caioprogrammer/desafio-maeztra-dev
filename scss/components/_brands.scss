@@ -1,0 +1,42 @@
+.brands {
+	.brands-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2.32rem;
+		@media screen and (max-width: 1180px) {
+			gap: 2rem;
+		}
+		@media screen and (max-width: 641px) {
+			display: none;
+		}
+		img {
+			width: 15%;
+		}
+	}
+	padding-bottom: 5rem;
+	h2 {
+		text-align: center;
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+		@media screen and (max-width: 641px) {
+			font-size: 2.4rem;
+		}
+	}
+	.swiper {
+		display: none;
+		@media screen and (max-width: 641px) {
+			display: block;
+			.swiper-wrapper {
+				width: 90%;
+				margin: auto;
+				img {
+					@media screen and (max-width: 486px) {
+						width: 90%;
+					}
+				}
+			}
+		}
+	}
+}

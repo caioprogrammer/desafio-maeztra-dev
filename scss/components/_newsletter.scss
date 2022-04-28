@@ -1,0 +1,55 @@
+.newsletter {
+	@media screen and (max-width: 640px) {
+		background-color: #fafafa;
+		border-bottom: 0.4rem solid #efefef;
+		border-top: 0.4rem solid #efefef;
+		flex-direction: column;
+	}
+	&__form {
+		@media screen and (max-width: 640px) {
+			width: 90%;
+		}
+		@media screen and (max-width: 486px) {
+			width: 100%;
+		}
+		label {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0);
+			white-space: nowrap;
+			border-width: 0;
+		}
+		position: relative;
+		width: 45%;
+		input {
+			padding: 1rem;
+			border: none;
+			border-radius: 0.7rem;
+			background-color: #efefef;
+			color: #353535;
+			width: 100%;
+			@media screen and (max-width: 640px) {
+				width: 70%;
+				background-color: white;
+				border: 0.1rem solid #353535;
+			}
+		}
+		.search {
+			position: absolute;
+			right: 0;
+			width: 25%;
+		}
+	}
+	display: flex;
+	align-items: center;
+	border-bottom: 0.2rem solid #efefef;
+	border-top: 0.2rem solid #efefef;
+	justify-content: center;
+	gap: 4rem;
+	margin-bottom: 3rem;
+	padding: 4rem;
+}

@@ -1,0 +1,80 @@
+.banner {
+  margin-bottom: 2rem;
+  .swiper-slide {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .texts {
+      position: absolute;
+      top: 23%;
+      left: 14%;
+      z-index: 1;
+      display: -ms-grid;
+      display: grid;
+      gap: 2rem;
+      @media screen and (max-width: 486px) {
+				top: 17%;
+				left: 13%;
+				gap: 1rem;
+      }
+      @media screen and (max-width: 320px) {
+				top: 17%;
+				gap: 0.7rem;
+      }
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        color: white;
+        @media screen and (max-width: 641px) {
+					width: 58%;
+					line-height: 4.5rem;
+        }
+        @media screen and (max-width: 375px) {
+					font-size: 3.5rem;
+        }
+        @media screen and (max-width: 320px) {
+					font-size: 3rem;
+        }
+      }
+      p {
+        width: 70%;
+        font-size: 2rem;
+        color: white;
+        @media screen and (max-width: 375px) {
+          font-size: 1.7rem;
+        }
+        @media screen and (max-width: 320px) {
+					font-size: 1.5rem;
+        }
+      }
+      .search {
+        width: 25%;
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+    }
+  }
+  .swiper-pagination {
+    @media screen and (max-width: 641px) {
+			margin-bottom: 1rem;
+    }
+  }
+  .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: transparent;
+    border: 0.1rem solid #faa500;
+    @media screen and (max-width: 641px) {
+			padding: 0.5rem;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #faa500;
+  }
+  .swiper-button-next {
+    color: black;
+  }
+  .swiper-button-prev {
+    color: black;
+  }
+}

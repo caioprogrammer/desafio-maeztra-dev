@@ -1,0 +1,126 @@
+section.products {
+	.product-container {
+		display: flex;
+		align-items: center;
+		gap: 5rem;
+		.product {
+			.image-price {
+				.colors {
+					display: flex;
+					align-items: center;
+					gap: 0.3rem;
+					div {
+						height: 2rem;
+						width: 2rem;
+						border-radius: 0.5rem;
+					}
+					div.beige {
+						background-color: #deac71;
+					}
+					div.pink {
+						background-color: #d37164;
+					}
+					div.light-blue {
+						background-color: #6497d3;
+					}
+					div.dark-blue {
+						background-color: #3c3b79;
+					}
+				}
+				display: -ms-grid;
+				display: grid;
+				gap: 0.5rem;
+				img {
+					width: 95%;
+				}
+				p {
+					font-weight: 700;
+				}
+			}
+			.description {
+				margin-bottom: 0.8rem;
+				h3 {
+					font-size: 1.6rem;
+					font-weight: 400;
+				}
+				small {
+					font-size: 1rem;
+					text-align: justify;
+					line-height: normal;
+					@media screen and (max-width: 641px) {
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.search {
+				width: 80%;
+				text-align: center;
+				padding: 0;
+				border-radius: 0.4rem;
+				@media screen and (max-width: 641px) {
+					width: 65%;
+					padding: 0.7rem;
+				}
+			}
+		}
+	}
+	margin-bottom: 5rem;
+	.swiper {
+		width: 82%;
+		@media screen and (max-width: 641px) {
+			width: 85%;
+		}
+	}
+	.swiper-wrapper {
+		display: flex;
+		gap: 0.3rem;
+	}
+	.swiper-button-next {
+		color: black;
+		@media screen and (max-width: 641px) {
+			display: none;
+		}
+	}
+	.swiper-button-prev {
+		color: black;
+		@media screen and (max-width: 641px) {
+			display: none;
+		}
+	}
+}
+
+
+@media screen and (max-width: 641px) and (max-width: 590px) {
+	section.products {
+		.swiper {
+			.product-container {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 641px) and (max-width: 425px) {
+	section.products {
+		.swiper {
+			width: 75%;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	section.products {
+		.swiper {
+			width: 84%;
+		}
+	}
+}
+
+@media screen and (max-width: 320px) {
+	section.products {
+		.swiper {
+			width: 95%;
+		}
+	}
+}
