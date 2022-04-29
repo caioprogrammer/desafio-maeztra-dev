@@ -1,4 +1,14 @@
 
+
+# Desfio Maeztra Concluido 
+
+Link: https://caioprogrammer.github.io/desafio-maeztra-dev/
+Link do repositório: https://github.com/caioprogrammer/desafio-maeztra-dev
+
+Implementei uma função SCSS para converter PX to REM 
+No JS tentei implementar pela primeira vez um Cookie de 24hrs para o Modal do Newsletter.
+Espero que gostem do meu desempenho e acho que fui bem, adoraria ver um feedback em breve.
+
 # Desafio Maeztra
 Olá candidato,
 Este teste se divide em duas etapas, a primeira é um teste lógico onde iremos analisar a sua forma de pensar e como você lida com problemas abstratos. Os códigos dessa etapa devem ser feitos em Javascript, e não se esqueça de documentar todo o processo de cada resposta.
