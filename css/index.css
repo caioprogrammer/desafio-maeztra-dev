@@ -17,12 +17,25 @@ body {
   font-family: "Titillium Web", sans-serif;
 }
 
-/* line 14, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-div.container {
-  background-color: #fafafa;
+/* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
-/* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+.container.newsletter__content, .container.footer-list {
+  max-width: 980px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  .container {
+    padding: 0 30px;
+  }
+}
+
+/* line 30, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -35,17 +48,13 @@ div.container {
   border-width: 0;
 }
 
-/* line 30, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 42, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
-/* line 39, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 47, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper {
   display: flex;
   align-items: center;
@@ -61,7 +70,7 @@ div.container {
   opacity: 0;
 }
 
-/* line 52, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 60, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content {
   display: -ms-grid;
   display: grid;
@@ -72,7 +81,7 @@ div.container {
   position: relative;
 }
 
-/* line 53, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 61, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email {
   display: -ms-grid;
   display: grid;
@@ -81,7 +90,7 @@ div.container {
   width: 100%;
 }
 
-/* line 54, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 62, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email .modal-title {
   display: flex;
   align-items: center;
@@ -90,7 +99,7 @@ div.container {
   gap: 1.5rem;
 }
 
-/* line 60, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 68, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email .modal-title h2 {
   font-size: 1.2rem;
   font-weight: 400;
@@ -98,7 +107,7 @@ div.container {
   color: #464b54;
 }
 
-/* line 67, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 75, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email form {
   display: -ms-grid;
   display: grid;
@@ -107,7 +116,7 @@ div.container {
   margin: auto;
 }
 
-/* line 68, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 76, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email form .search {
   display: flex;
   align-items: center;
@@ -117,31 +126,31 @@ div.container {
   font-weight: 700;
 }
 
-/* line 81, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 89, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email form input {
   padding: 1rem;
   border: 0.1rem solid #c4c4c4;
   border-radius: 0.7rem;
 }
 
-/* line 92, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 100, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email .text {
   color: #787d83;
   font-size: 2rem;
   text-align: center;
 }
 
-/* line 96, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 104, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email .text p {
   line-height: 2rem;
 }
 
-/* line 98, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 106, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .modal-email .text p span {
   font-weight: 700;
 }
 
-/* line 111, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 119, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper .modal-content .close {
   position: absolute;
   top: -4%;
@@ -171,12 +180,11 @@ div.container {
 .header__header {
   align-items: center;
   display: flex;
-  gap: 10rem;
-  margin: 0 auto 2rem;
-  width: 85%;
+  margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
-/* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .icon-search {
   align-items: center;
   display: flex;
@@ -185,40 +193,40 @@ div.container {
 }
 
 @media screen and (max-width: 1071px) {
-  /* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .icon-search {
     gap: 4rem;
   }
 }
 
 @media screen and (max-width: 641px) {
-  /* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .icon-search {
     gap: 2rem;
   }
 }
 
-/* line 29, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .icon-search form {
   position: relative;
   width: 100%;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 29, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .icon-search form {
     display: none;
   }
 }
 
 @media screen and (max-width: 641px) {
-  /* line 35, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 34, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .icon-search form.show {
     display: block;
   }
 }
 
-/* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 39, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .icon-search form label {
   border-width: 0;
   clip: rect(0, 0, 0);
@@ -231,7 +239,7 @@ div.container {
   width: 1px;
 }
 
-/* line 51, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 50, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .icon-search form input {
   background-color: #efefef;
   border: none;
@@ -241,27 +249,27 @@ div.container {
   width: 100%;
 }
 
-/* line 59, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 58, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .icon-search form .search {
   right: 0;
   position: absolute;
   width: 25%;
 }
 
-/* line 65, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 64, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .icon-search .menu-mobile {
   display: none;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 65, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 64, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .icon-search .menu-mobile {
     display: block;
     cursor: pointer;
   }
 }
 
-/* line 73, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 72, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .right-options {
   align-items: center;
   display: flex;
@@ -269,13 +277,13 @@ div.container {
 }
 
 @media screen and (max-width: 1048px) {
-  /* line 73, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 72, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .right-options {
     gap: 2rem;
   }
 }
 
-/* line 81, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 80, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .right-options .option {
   align-items: center;
   display: flex;
@@ -284,31 +292,31 @@ div.container {
 }
 
 @media screen and (max-width: 641px) {
-  /* line 81, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 80, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .right-options .option {
     display: none;
   }
 }
 
-/* line 89, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 88, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .right-options .option:nth-child(4) {
   border: 0.1rem solid #faa500;
   border-radius: 0.7rem;
   padding: 0.9rem;
 }
 
-/* line 94, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 93, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .right-options .option:hover {
   color: #faa500;
 }
 
-/* line 98, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 97, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .right-options .options-mobile {
   display: none;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 98, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 97, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__header .right-options .options-mobile {
     display: flex;
     align-items: center;
@@ -316,7 +324,7 @@ div.container {
   }
 }
 
-/* line 105, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 104, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__header .right-options .options-mobile .close-search {
   display: none;
   width: 80%;
@@ -381,15 +389,16 @@ div.container {
 }
 
 @media screen and (max-width: 641px) {
-  /* line 139, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 138, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__nav-bar {
     width: 100%;
     height: 100%;
     background-color: white;
-    display: none;
     position: fixed;
     top: 0;
+    left: -999px;
     z-index: 2;
+    transition: ease .5s left;
   }
 }
 
@@ -398,27 +407,26 @@ div.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  left: 0;
 }
 
-/* line 154, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 155, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__nav-bar .links-container {
   align-items: center;
   display: flex;
-  gap: 5rem;
-  margin: auto;
   padding: 2rem;
-  width: 52%;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1071px) {
-  /* line 154, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 155, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__nav-bar .links-container {
     width: 70%;
   }
 }
 
 @media screen and (max-width: 641px) {
-  /* line 154, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 155, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__nav-bar .links-container {
     gap: 3rem;
     padding: 0;
@@ -429,21 +437,22 @@ div.container {
   }
 }
 
-/* line 172, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 171, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__nav-bar .links-container .links {
   font-size: 1.4rem;
   font-weight: 600;
   list-style: none;
+  padding: 0 4rem;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 172, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+  /* line 171, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
   .header__nav-bar .links-container .links {
     font-size: 2rem;
   }
 }
 
-/* line 176, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
+/* line 175, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
 .header__nav-bar .links-container .links:nth-child(1) {
   align-items: center;
   display: flex;
@@ -502,104 +511,97 @@ div.container {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-  width: 82%;
 }
 
-@media screen and (max-width: 641px) {
+@media screen and (max-width: 768px) {
   /* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
   .footer__container {
-    width: 90%;
     flex-direction: column;
     gap: 2.5rem;
   }
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+  /* line 9, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
   .footer__container img {
     width: 100%;
   }
 }
 
-/* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container .networking {
   align-items: center;
   display: flex;
   gap: 1.5rem;
 }
 
-@media screen and (max-width: 641px) {
-  /* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
   .footer__container .networking {
     gap: 2.5rem;
   }
 }
 
-/* line 24, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container .payment-methods {
   align-items: center;
   display: flex;
   gap: 1.5rem;
 }
 
-@media screen and (max-width: 641px) {
-  /* line 24, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
   .footer__container .payment-methods {
     gap: 2.5rem;
   }
 }
 
-/* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 29, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container .copyright {
   align-items: center;
   display: flex;
   gap: 1.5rem;
 }
 
-@media screen and (max-width: 641px) {
-  /* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 29, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
   .footer__container .copyright {
     gap: 2.5rem;
   }
 }
 
-/* line 39, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 36, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container .copyright .copyright-wrapper {
   display: -ms-grid;
   display: grid;
   gap: 0.2rem;
 }
 
-/* line 43, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container .copyright .copyright-wrapper h4 {
   color: white;
   font-size: 1rem;
   font-weight: 400;
 }
 
-/* line 48, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 45, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container .copyright .copyright-wrapper img {
   width: 70%;
 }
 
-@media screen and (max-width: 641px) {
-  /* line 48, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+@media screen and (max-width: 768px) {
+  /* line 45, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
   .footer__container .copyright .copyright-wrapper img {
     width: 100%;
   }
 }
 
-/* line 56, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
+/* line 53, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
 .footer__container img {
   width: 70%;
 }
 
 /* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
 .newsletter {
-  display: flex;
-  align-items: center;
   border-bottom: 0.2rem solid #efefef;
   border-top: 0.2rem solid #efefef;
-  justify-content: center;
-  gap: 4rem;
   margin-bottom: 3rem;
   padding: 4rem;
 }
@@ -615,26 +617,27 @@ div.container {
 }
 
 /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
+.newsletter__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
+  .newsletter__content {
+    flex-direction: column;
+  }
+}
+
+/* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
 .newsletter__form {
   position: relative;
-  width: 45%;
+  width: 100%;
+  max-width: 630px;
 }
 
-@media screen and (max-width: 640px) {
-  /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-  .newsletter__form {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 486px) {
-  /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-  .newsletter__form {
-    width: 100%;
-  }
-}
-
-/* line 15, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
+/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
 .newsletter__form label {
   position: absolute;
   width: 1px;
@@ -647,7 +650,7 @@ div.container {
   border-width: 0;
 }
 
-/* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
+/* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
 .newsletter__form input {
   padding: 1rem;
   border: none;
@@ -658,7 +661,7 @@ div.container {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
+  /* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
   .newsletter__form input {
     width: 70%;
     background-color: white;
@@ -666,7 +669,7 @@ div.container {
   }
 }
 
-/* line 41, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
+/* line 44, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
 .newsletter__form .search {
   position: absolute;
   right: 0;
@@ -682,74 +685,73 @@ div.container {
 .footer-list__container {
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
-  gap: 7rem;
+  justify-content: space-between;
 }
 
-/* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+/* line 7, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
 .footer-list__container ul {
   display: -ms-grid;
   display: grid;
   gap: 1.6rem;
 }
 
-/* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+/* line 11, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
 .footer-list__container ul::before {
   content: attr(aria-label);
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+/* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
 .footer-list__container ul .title-information {
   display: none;
 }
 
-/* line 20, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+/* line 19, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
 .footer-list__container ul li {
   font-size: 1.2rem;
   cursor: pointer;
 }
 
-/* line 23, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+/* line 22, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
 .footer-list__container ul li:hover {
   color: #faa500;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 33, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container {
     width: 90%;
     margin: auto;
     flex-direction: column;
   }
-  /* line 37, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 36, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul {
     width: 100%;
   }
-  /* line 39, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 38, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul::before {
     content: none;
   }
-  /* line 42, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 41, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul .title-information {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  /* line 46, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 45, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul .title-information h3 {
     font-size: 1.6rem;
   }
-  /* line 49, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 48, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul .title-information img {
     cursor: pointer;
   }
-  /* line 53, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 52, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul li {
     display: none;
   }
-  /* line 56, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
+  /* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
   .footer-list__container ul li.show {
     display: block;
   }
@@ -1066,11 +1068,6 @@ section.products .product-container .product .search {
   }
 }
 
-/* line 68, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .swiper {
-  width: 82%;
-}
-
 @media screen and (max-width: 641px) {
   /* line 68, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper {
@@ -1078,38 +1075,38 @@ section.products .swiper {
   }
 }
 
-/* line 74, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+/* line 73, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
 section.products .swiper-wrapper {
   display: flex;
   gap: 0.3rem;
 }
 
-/* line 78, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+/* line 77, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
 section.products .swiper-button-next {
   color: black;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 78, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+  /* line 77, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper-button-next {
     display: none;
   }
 }
 
-/* line 84, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+/* line 83, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
 section.products .swiper-button-prev {
   color: black;
 }
 
 @media screen and (max-width: 641px) {
-  /* line 84, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+  /* line 83, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper-button-prev {
     display: none;
   }
 }
 
 @media screen and (max-width: 641px) and (max-width: 590px) {
-  /* line 96, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+  /* line 95, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper .product-container {
     display: flex;
     justify-content: center;
@@ -1117,21 +1114,21 @@ section.products .swiper-button-prev {
 }
 
 @media screen and (max-width: 641px) and (max-width: 425px) {
-  /* line 106, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+  /* line 105, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper {
     width: 75%;
   }
 }
 
 @media screen and (max-width: 375px) {
-  /* line 114, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+  /* line 113, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper {
     width: 84%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 122, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
+  /* line 121, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
   section.products .swiper {
     width: 95%;
   }
@@ -1268,58 +1265,57 @@ section.products .swiper-button-prev {
 
 /* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 5rem;
 }
 
-/* line 6, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+/* line 3, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article__banner {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 10, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+/* line 7, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article__banner h2 {
-  display: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 56px;
+  color: #000000;
 }
 
 /* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article__banner p {
-  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  max-width: 420px;
 }
 
-/* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article__banner img {
-  width: 82%;
-}
-
-/* line 20, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+/* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article picture {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 24, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+/* line 25, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article picture h2 {
   display: none;
 }
 
-/* line 27, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+/* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article picture p {
   display: none;
 }
 
-/* line 30, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+/* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
 .article picture img {
   width: 82%;
 }
 
 @media screen and (max-width: 640px) {
-  /* line 39, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+  /* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
   .article__banner {
     width: 90%;
     -webkit-box-orient: vertical;
@@ -1328,23 +1324,23 @@ section.products .swiper-button-prev {
     flex-direction: column;
     gap: 3rem;
   }
-  /* line 46, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+  /* line 47, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
   .article__banner h2 {
     display: block;
     font-size: 2.4rem;
   }
-  /* line 50, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+  /* line 51, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
   .article__banner p {
     display: block;
     text-align: justify;
   }
-  /* line 54, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
+  /* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
   .article__banner img {
     width: 100%;
   }
 }
 
-/* line 149, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 157, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .search {
   background-color: #faa500;
   color: white;
@@ -1354,12 +1350,12 @@ section.products .swiper-button-prev {
   cursor: pointer;
 }
 
-/* line 157, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 165, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 li {
   list-style: none;
 }
 
-/* line 161, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+/* line 169, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
 .modal-wrapper.show {
   visibility: visible;
   opacity: 1;
@@ -1368,7 +1364,7 @@ li {
 }
 
 @media screen and (max-width: 1135px) {
-  /* line 171, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 179, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   html {
     font-size: 60.5%;
     font-size: 58.5%;
@@ -1376,52 +1372,48 @@ li {
 }
 
 @media screen and (max-width: 641px) {
-  /* line 179, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 187, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   html {
     font-size: 60%;
   }
-  /* line 182, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  div.container {
-    background-color: #ffffff;
-  }
-  /* line 185, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 193, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   .line {
     display: none;
   }
-  /* line 190, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 198, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   .modal-wrapper .modal-content {
     width: 90%;
     padding: 4rem;
     -ms-grid-columns: none;
     grid-template-columns: none;
   }
-  /* line 195, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 203, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   .modal-wrapper .modal-content .close {
     top: -7%;
   }
-  /* line 198, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 206, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   .modal-wrapper .modal-content img.banner-modal {
     display: none;
   }
-  /* line 201, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 209, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   .modal-wrapper .modal-content .modal-email {
     gap: 3rem;
   }
-  /* line 203, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 211, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   .modal-wrapper .modal-content .modal-email form {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 486px) {
-  /* line 212, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 220, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   html {
     font-size: 58%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  /* line 217, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
+  /* line 225, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
   html {
     font-size: 56%;
   }

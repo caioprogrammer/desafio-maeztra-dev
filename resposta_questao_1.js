@@ -14,11 +14,8 @@ const array = [
 
 for (let i in array) {
   let valor = array[i].split(',').map(Number);
-  // verificação dos valores
   let ordem = true;
-  // verificação da condição
   for (let item = 0; item < valor.length - 1; item++) {
-    //verificando se os valores são maiores
     if (valor[item] > valor[item + 1]) {
       ordem = false;
       break;
@@ -26,8 +23,8 @@ for (let i in array) {
   }
 
   if (ordem === true) {
-    console.log(`Este item ${valor} == Está ordenado`);
+    // console.log(`Este item ${valor} ==> Está ordenado`);
   } else {
-    console.log(`Este item ${valor} == Não está ordenado`);
+    // console.log(`Este item ${valor} ==> Não está ordenado`);
   }
 }

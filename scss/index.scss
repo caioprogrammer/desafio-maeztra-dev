@@ -11,8 +11,20 @@ body {
 	font-size: 1.6rem;
 	font-family: "Titillium Web", sans-serif;
 }
-div.container {
-	background-color: #fafafa;
+// div.container {
+// 	background-color: #fafafa;
+// }
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	&.newsletter__content, &.footer-list {
+		max-width: 980px;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding: 0 30px;
+	}
 }
 
 .sr-only {
@@ -175,9 +187,9 @@ li {
 	html {
 		font-size: 60%;
 	}
-	div.container {
-		background-color: #ffffff;
-	}
+	// div.container {
+	// 	background-color: #ffffff;
+	// }
 	.line {
 		display: none;
 	}

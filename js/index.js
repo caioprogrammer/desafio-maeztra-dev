@@ -1,5 +1,3 @@
-
-
 function swiperDesktop() {
     new Swiper(".banner .mySwiper", {
       pagination: {
@@ -16,6 +14,8 @@ function swiperDesktop() {
 
 function swiperMobile() {
     new Swiper(".products .mySwiper", {
+      loop: true,
+      autoplay: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -41,7 +41,6 @@ function swiperMobile() {
     })
     
     new Swiper(".features-maeztra .mySwiper", {
-      
       breakpoints: {
         320: {
           slidesPerView: 1,
@@ -55,8 +54,9 @@ function swiperMobile() {
         },
       }
     })
-    new Swiper(".partners .mySwiper", {
+    new Swiper(".brands .mySwiper", {
       slidesPerView: 1,
+      autoplay: true,
     })
 }
 
@@ -65,13 +65,29 @@ const modal = document.querySelector('.modal-wrapper')
     
 modal.querySelector('.close').onclick = () => {
   modal.classList.remove('show')
-  document.querySelector('body').style.overflow = 'scroll'
+  document.querySelector('body').style.overflow = 'scroll';
+
+  // function setCookie(key, value, expiry) {
+  //   var expires = new Date();
+  //   expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+  //   document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+  // }
+  
+  // function getCookie(key) {
+  //   var keyValue = document.cookie.match('(^|;) ?' + key + '=([^;]*)(;|$)');
+  //   return keyValue ? keyValue[2] : null;
+  // }
+
+  //  if(getCookie("jaexibiupopup") === null){
+  //   modal.classList.add('show')
+  //   setCookie('jaexibiupopup', true, 1);
+  // }
 }
     
-// window.onload = () => {
-//   modal.classList.add('show')
-//   document.querySelector('body').style.overflow = 'hidden'
-// }
+window.onload = () => {
+  modal.classList.add('show')
+  document.querySelector('body').style.overflow = 'hidden';
+}
 
 
 function menu() {
@@ -96,3 +112,5 @@ function menu() {
 swiperDesktop()
 swiperMobile()
 menu()
+
+
