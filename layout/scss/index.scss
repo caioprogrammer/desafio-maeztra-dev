@@ -1,16 +1,27 @@
+@import './components/variables';
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
 }
-html {
-	font-size: 62.5%;
-}
 body {
-	font-size: 1.6rem;
+	font-size: toRem(16);
 	font-family: "Titillium Web", sans-serif;
 }
+
+@import './components/header';
+
+@import './components/footer';
+
+@import './components/newsletter';
+
+@import './components/access';
+@import './components/banner';
+@import './components/brands';
+@import './components/products';
+@import './components/features';
+@import './components/article';
 
 .container {
 	margin: 0 auto;
@@ -60,13 +71,13 @@ body {
 				align-items: center;
 				display: flex;
 				flex-direction: column;
-				gap: 1.5rem;
+				gap: toRem(15);
 				justify-content: center;
 				h2 {
-					font-size: 1.2rem;
+					font-size: toRem(12);
 					font-weight: 400;
 					text-transform: uppercase;
-					color: #464b54;
+					color: $grayDark;
 				}
 			}
 			form {
@@ -74,32 +85,32 @@ body {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					gap: 0.6rem;
+					gap: toRem(6);
 					text-transform: uppercase;
 					font-weight: 700;
 				}
 				display: -ms-grid;
 				display: grid;
-				gap: 1rem;
+				gap: toRem(10);
 				width: 75%;
 				margin: auto;
 				input {
-					padding: 1rem;
-					border: 0.1rem solid #c4c4c4;
-					border-radius: 0.7rem;
+					padding: toRem(10);
+					border: toRem(1) solid $grayLight;
+					border-radius: toRem(7);
 				}
 			}
 			display: -ms-grid;
 			display: grid;
 			margin: auto;
-			gap: 2.5rem;
+			gap: toRem(25);
 			width: 100%;
 			.text {
-				color: #787d83;
-				font-size: 2rem;
+				color: $grayRegular;
+				font-size: toRem(20);
 				text-align: center;
 				p {
-					line-height: 2rem;
+					line-height: toRem(20);
 					span {
 						font-weight: 700;
 					}
@@ -117,7 +128,7 @@ body {
 			position: absolute;
 			top: -4%;
 			right: 0;
-			font-size: 1.2rem;
+			font-size: toRem(12);
 			text-transform: uppercase;
 			color: white;
 			cursor: pointer;
@@ -125,18 +136,6 @@ body {
 	}
 }
 
-@import './components/header';
-
-@import './components/footer';
-
-@import './components/newsletter';
-
-@import './components/access';
-@import './components/banner';
-@import './components/brands';
-@import './components/products';
-@import './components/features';
-@import './components/article';
 
 
 
@@ -152,11 +151,11 @@ body {
 
 
 .search {
-	background-color: #faa500;
+	background-color: $destaque5;
 	color: white;
-	padding: 1rem;
+	padding: toRem(10);
 	border: none;
-	border-radius: 0.7rem;
+	border-radius: toRem(7);
 	cursor: pointer;
 }
 li {
@@ -181,7 +180,7 @@ li {
 	.modal-wrapper {
 		.modal-content {
 			width: 90%;
-			padding: 4rem;
+			padding: toRem(40);
 			-ms-grid-columns: none;
 			grid-template-columns: none;
 			.close {
@@ -191,7 +190,7 @@ li {
 				display: none;
 			}
 			.modal-email {
-				gap: 3rem;
+				gap: toRem(30);
 				form {
 					width: 90%;
 				}

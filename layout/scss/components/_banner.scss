@@ -1,5 +1,5 @@
 .banner {
-  margin-bottom: 2rem;
+  margin-bottom: toRem(20);
   .swiper-slide {
     position: relative;
     img {
@@ -12,64 +12,64 @@
       z-index: 1;
       display: -ms-grid;
       display: grid;
-      gap: 2rem;
+      gap: toRem(20);
       @media screen and (max-width: 486px) {
 				top: 17%;
 				left: 13%;
-				gap: 1rem;
+				gap: toRem(10);
       }
       @media screen and (max-width: 320px) {
 				top: 17%;
-				gap: 0.7rem;
+				gap: toRem(7);
       }
       h1 {
-        font-size: 4rem;
+        font-size: toRem(40);
         font-weight: 700;
         color: white;
         @media screen and (max-width: 768px) {
 					width: 58%;
-					line-height: 4.5rem;
+					line-height: toRem(45);
         }
         @media screen and (max-width: 375px) {
-					font-size: 3.5rem;
+					font-size: toRem(35);
         }
         @media screen and (max-width: 320px) {
-					font-size: 3rem;
+					font-size: toRem(30);
         }
       }
       p {
         width: 70%;
-        font-size: 2rem;
+        font-size: toRem(20);
         color: white;
         @media screen and (max-width: 375px) {
-          font-size: 1.7rem;
+          font-size: toRem(17);
         }
         @media screen and (max-width: 320px) {
-					font-size: 1.5rem;
+					font-size: toRem(15);
         }
       }
       .search {
         width: 25%;
-        font-size: 1.4rem;
+        font-size: toRem(14);
         font-weight: 700;
       }
     }
   }
   .swiper-pagination {
     @media screen and (max-width: 768px) {
-			margin-bottom: 1rem;
+			margin-bottom: toRem(10);
     }
   }
   .swiper-pagination-bullet {
     opacity: 1;
     background-color: transparent;
-    border: 0.1rem solid #faa500;
+    border: toRem(1) solid $destaque5;
     @media screen and (max-width: 768px) {
-			padding: 0.5rem;
+			padding: toRem(5);
     }
   }
   .swiper-pagination-bullet-active {
-    background-color: #faa500;
+    background-color: $destaque5;
   }
   .swiper-button-next {
     color: black;

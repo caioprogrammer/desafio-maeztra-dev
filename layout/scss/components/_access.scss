@@ -1,5 +1,5 @@
 .footer-list {
-	margin-bottom: 5rem;
+	margin-bottom: toRem(50) !important;
 	&__container {
 		display: flex;
 		align-items: flex-start;
@@ -7,20 +7,20 @@
 		ul {
 			display: -ms-grid;
 			display: grid;
-			gap: 1.6rem;
+			gap: toRem(16);
 			&::before {
 				content: attr(aria-label);
 				font-weight: 700;
-				font-size: 1.6rem;
+				font-size: toRem(16);
 			}
 			.title-information {
 				display: none;
 			}
 			li {
-				font-size: 1.2rem;
+				font-size: toRem(12);
 				cursor: pointer;
 				&:hover {
-					color: #faa500;
+					color: $destaque5;
 				}
 			}
 		}
@@ -43,7 +43,7 @@
 					justify-content: space-between;
 					align-items: center;
 					h3 {
-						font-size: 1.6rem;
+						font-size: toRem(16);
 					}
 					img {
 						cursor: pointer;

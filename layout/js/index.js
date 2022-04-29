@@ -56,7 +56,9 @@ function swiperMobile() {
     })
     new Swiper(".brands .mySwiper", {
       slidesPerView: 1.125,
-      autoplay: true,
+      autoplay: {
+        delay: 8000,
+      }
     })
 }
 
@@ -84,10 +86,10 @@ modal.querySelector('.close').onclick = () => {
   // }
 }
     
-// window.onload = () => {
-//   modal.classList.add('show')
-//   document.querySelector('body').style.overflow = 'hidden';
-// }
+window.onload = () => {
+  modal.classList.add('show')
+  document.querySelector('body').style.overflow = 'hidden';
+}
 
 
 function menu() {

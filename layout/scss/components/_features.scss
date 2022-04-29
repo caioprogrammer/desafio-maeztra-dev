@@ -2,7 +2,7 @@
 	.feature-container {
 		display: flex;
 		align-items: center;
-		gap: 2rem;
+		gap: toRem(20);
 		justify-content: center;
 		@media screen and (max-width: 1180px) {
 			display: none;
@@ -10,24 +10,24 @@
 		.feature {
 			display: flex;
 			align-items: center;
-			gap: 1.5rem;
-			background-color: #efefef;
-			padding: 0.8rem;
-			border-radius: 0.7rem;
+			gap: toRem(15);
+			background-color: $whiteDark;
+			padding: toRem(8);
+			border-radius: toRem(7);
 			h3 {
-				font-size: 1.3rem;
+				font-size: toRem(13);
 			}
 			p {
-				font-size: 1.1rem;
+				font-size: toRem(11);
 			}
 		}
 	}
-	margin-bottom: 5rem;
+	margin-bottom: toRem(50);
 	h2 {
 		text-align: center;
-		font-size: 1.6rem;
+		font-size: toRem(16);
 		font-weight: 700;
-		margin-bottom: 2rem;
+		margin-bottom: toRem(20);
 	}
 	.swiper {
 		display: none;
@@ -43,17 +43,17 @@
 				@media screen and (max-width: 1180px) {
 					display: flex;
 					align-items: center;
-					gap: 1.5rem;
-					background-color: #efefef;
-					padding: 0.8rem;
-					border-radius: 0.7rem;
+					gap: toRem(15);
+					background-color: $whiteDark;
+					padding: toRem(8);
+					border-radius: toRem(7);
 					width: 90%;
 					margin: auto;
 					h3 {
-						font-size: 1.3rem;
+						font-size: toRem(13);
 					}
 					p {
-						font-size: 1.1rem;
+						font-size: toRem(11);
 					}
 				}
 			}
@@ -63,8 +63,8 @@
 			@media screen and (max-width: 1180px) {
 				color: black;
 				&::after {
-					font-size: 2rem;
-					font-size: 2rem;
+					font-size: toRem(20);
+					font-size: toRem(20);
 				}
 			}
 			@media screen and (max-width: 768px) {
@@ -76,8 +76,8 @@
 				color: black;
 				left: 0;
 				&::after {
-					font-size: 2rem;
-					font-size: 2rem;
+					font-size: toRem(20);
+					font-size: toRem(20);
 				}
 			}
 			@media screen and (max-width: 768px) {

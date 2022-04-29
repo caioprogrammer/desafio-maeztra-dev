@@ -1,24 +1,27 @@
 .header {
 	background-color: white;
 	&__top {
-		background-color: #353535;
+		background-color: $blackLight;
 		color: white;
-		font-size: 1.2rem;
-		margin-bottom: 3rem;
-		padding: 0.3rem;
+		font-size: toRem(12);
+		margin-bottom: toRem(30);
+		padding: toRem(3);
 		text-align: center;
 	}
 
 	&__header {
 		align-items: center;
 		display: flex;
-		margin-bottom: 2rem;
+		margin-bottom: toRem(20) !important;
 		justify-content: space-between;
 		.icon-search {
 			align-items: center;
 			display: flex;
-			gap: 6rem;
+			gap: toRem(60);
 			width: 55%;
+			@media screen and (max-width: 768px) {
+				gap: toRem(20);
+			}
 			form {				
 				position: relative;
 				width: 100%;
@@ -42,11 +45,11 @@
 					width: 1px;
 				}
 				input {
-					background-color: #efefef;
+					background-color: $whiteDark;
 					border: none;
-					border-radius: 0.7rem;
-					color: #353535;
-					padding: 1rem;
+					border-radius: toRem(7);
+					color: $blackLight;
+					padding: toRem(10);
 					width: 100%;
 				}
 				.search {
@@ -66,23 +69,23 @@
 		.right-options {
 			align-items: center;
 			display: flex;
-			gap: 3rem;
+			gap: toRem(30);
 			
 			.option {
 				align-items: center;
 				display: flex;
-				gap: 0.5rem;
+				gap: toRem(5);
 				@media screen and (max-width: 768px) {
 					display: none;
 				}
 				cursor: pointer;
 				&:nth-child(4) {
-					border: 0.1rem solid #faa500;
-					border-radius: 0.7rem;
-					padding: 0.9rem;
+					border: toRem(1) solid $destaque5;
+					border-radius: toRem(7);
+					padding: toRem(9);
 				}
 				&:hover {
-					color: #faa500;
+					color: $destaque5;
 				}
 			}
 			.options-mobile {
@@ -90,7 +93,7 @@
 				@media screen and (max-width: 768px) {
 					display: flex;
 					align-items: center;
-					gap: 2rem;
+					gap: toRem(20);
 				}
 				.close-search {
 					display: none;
@@ -120,13 +123,13 @@
 		.links-container {
 			align-items: center;
 			display: flex;
-			padding: 2rem;
+			padding: toRem(20);
 			justify-content: center;
 			@media screen and (max-width: 1071px) {
 				width: 100%;
 			}
 			@media screen and (max-width: 768px) {
-				gap: 3rem;
+				gap: toRem(30);
 				padding: 0;
 				width: 100%;
 				flex-direction: column;
@@ -135,25 +138,25 @@
 			}
 			.links {
 				@media screen and (max-width: 768px) {
-					font-size: 2rem;
+					font-size: toRem(20);
 				}
 				@media screen and (max-width: 1140px) {
-					padding: 0 3rem;
+					padding: 0 toRem(30);
 				}
 				&:nth-child(1) {
 					align-items: center;
 					display: flex;
-					gap: 0.6rem;
+					gap: toRem(6);
 				}
-				font-size: 1.4rem;
+				font-size: toRem(14);
 				font-weight: 600;
 				list-style: none;
-				padding: 0 4rem;
+				padding: 0 toRem(40);
 				a {
-					color: #353535;
+					color: $blackLight;
 					text-decoration: none;
 					&:hover {
-						color: #faa500;
+						color: $destaque5;
 					}
 				}
 			}
@@ -171,13 +174,13 @@
 	}
 
 	&.show {
-		gap: 7rem;
+		gap: toRem(70);
 		width: 95%;
 	}
 
 	&__line {
-		background-color: #efefef;
-		height: 0.3rem;
+		background-color: $whiteDark;
+		height: toRem(3);
 		width: 100%;
 	}
 

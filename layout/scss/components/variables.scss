@@ -1,0 +1,24 @@
+$grayLight: #c4c4c4;
+$grayRegular: #787d83;
+$grayDark: #464b54;
+
+
+$black: #000000;
+$blackLight: #353535;
+
+$white: #ffffff;
+$whiteMedium: #fafafa;
+$whiteDark: #efefef;
+
+
+$destaque1: #deac71;
+$destaque2: #d37164;
+$destaque3: #6497d3;
+$destaque4: #3c3b79;
+$destaque5: #faa500;
+
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem; 
+  @return $remValue;
+}
