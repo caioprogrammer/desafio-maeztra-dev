@@ -65,7 +65,7 @@ const modal = document.querySelector('.modal-wrapper')
     
 modal.querySelector('.close').onclick = () => {
   modal.classList.remove('show')
-  document.querySelector('body').style.overflow = 'scroll';
+  document.querySelector('body').style.overflowY = 'scroll';
 
   // function setCookie(key, value, expiry) {
   //   var expires = new Date();
