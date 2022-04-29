@@ -7,7 +7,7 @@
 		@media screen and (max-width: 1180px) {
 			gap: 2rem;
 		}
-		@media screen and (max-width: 641px) {
+		@media screen and (max-width: 768px) {
 			display: none;
 		}
 		img {
@@ -20,13 +20,13 @@
 		font-size: 1.6rem;
 		font-weight: 700;
 		margin-bottom: 2rem;
-		@media screen and (max-width: 641px) {
+		@media screen and (max-width: 768px) {
 			font-size: 2.4rem;
 		}
 	}
 	.swiper {
 		display: none;
-		@media screen and (max-width: 641px) {
+		@media screen and (max-width: 768px) {
 			display: block;
 			.swiper-wrapper {
 				width: 90%;

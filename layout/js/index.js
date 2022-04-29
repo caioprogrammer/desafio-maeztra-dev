@@ -23,10 +23,10 @@ function swiperMobile() {
     
       breakpoints: {
         320: {
-          slidesPerView: 1,
+          slidesPerView: 1.125,
         },
         590: {
-          slidesPerView: 2,
+          slidesPerView: 2.125,
         },
         976: {
           slidesPerView: 3,
@@ -43,10 +43,10 @@ function swiperMobile() {
     new Swiper(".features-maeztra .mySwiper", {
       breakpoints: {
         320: {
-          slidesPerView: 1,
+          slidesPerView: 1.125,
         },
         642: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -55,7 +55,7 @@ function swiperMobile() {
       }
     })
     new Swiper(".brands .mySwiper", {
-      slidesPerView: 1,
+      slidesPerView: 1.125,
       autoplay: true,
     })
 }
@@ -84,10 +84,10 @@ modal.querySelector('.close').onclick = () => {
   // }
 }
     
-window.onload = () => {
-  modal.classList.add('show')
-  document.querySelector('body').style.overflow = 'hidden';
-}
+// window.onload = () => {
+//   modal.classList.add('show')
+//   document.querySelector('body').style.overflow = 'hidden';
+// }
 
 
 function menu() {

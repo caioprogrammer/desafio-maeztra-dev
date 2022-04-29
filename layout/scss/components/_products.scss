@@ -1,4 +1,7 @@
 section.products {
+	@media screen and (max-width: 768px) {
+		padding: 0;
+	}
 	.product-container {
 		display: flex;
 		align-items: center;
@@ -47,7 +50,7 @@ section.products {
 					font-size: 1rem;
 					text-align: justify;
 					line-height: normal;
-					@media screen and (max-width: 641px) {
+					@media screen and (max-width: 768px) {
 						font-size: 1.2rem;
 					}
 				}
@@ -57,7 +60,7 @@ section.products {
 				text-align: center;
 				padding: 0;
 				border-radius: 0.4rem;
-				@media screen and (max-width: 641px) {
+				@media screen and (max-width: 768px) {
 					width: 65%;
 					padding: 0.7rem;
 				}
@@ -65,61 +68,32 @@ section.products {
 		}
 	}
 	margin-bottom: 5rem;
-	.swiper {
-		@media screen and (max-width: 641px) {
-			width: 85%;
-		}
-	}
 	.swiper-wrapper {
 		display: flex;
 		gap: 0.3rem;
 	}
 	.swiper-button-next {
 		color: black;
-		@media screen and (max-width: 641px) {
+		@media screen and (max-width: 768px) {
 			display: none;
 		}
 	}
 	.swiper-button-prev {
 		color: black;
-		@media screen and (max-width: 641px) {
+		@media screen and (max-width: 768px) {
 			display: none;
 		}
 	}
 }
 
 
-@media screen and (max-width: 641px) and (max-width: 590px) {
+@media screen and (max-width: 768px) and (max-width: 590px) {
 	section.products {
 		.swiper {
 			.product-container {
 				display: flex;
 				justify-content: center;
 			}
-		}
-	}
-}
-
-@media screen and (max-width: 641px) and (max-width: 425px) {
-	section.products {
-		.swiper {
-			width: 75%;
-		}
-	}
-}
-
-@media screen and (max-width: 375px) {
-	section.products {
-		.swiper {
-			width: 84%;
-		}
-	}
-}
-
-@media screen and (max-width: 320px) {
-	section.products {
-		.swiper {
-			width: 95%;
 		}
 	}
 }

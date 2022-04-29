@@ -19,20 +19,14 @@
 			display: flex;
 			gap: 6rem;
 			width: 55%;
-			@media screen and (max-width: 1071px) {
-				gap: 4rem;
-			}
-			@media screen and (max-width: 641px) {
-				gap: 2rem;
-			}
 			form {				
 				position: relative;
 				width: 100%;
-				@media screen and (max-width: 641px) {
+				@media screen and (max-width: 768px) {
 					display: none;
 				}
 				&.show {
-					@media screen and (max-width: 641px) {
+					@media screen and (max-width: 768px) {
 						display: block;
 					}
 				}
@@ -63,7 +57,7 @@
 			}
 			.menu-mobile {
 				display: none;
-				@media screen and (max-width: 641px) {
+				@media screen and (max-width: 768px) {
 					display: block;
 					cursor: pointer;
 				}
@@ -73,15 +67,12 @@
 			align-items: center;
 			display: flex;
 			gap: 3rem;
-			@media screen and (max-width: 1048px) {
-				gap: 2rem;
-			}
 			
 			.option {
 				align-items: center;
 				display: flex;
 				gap: 0.5rem;
-				@media screen and (max-width: 641px) {
+				@media screen and (max-width: 768px) {
 					display: none;
 				}
 				cursor: pointer;
@@ -96,7 +87,7 @@
 			}
 			.options-mobile {
 				display: none;
-				@media screen and (max-width: 641px) {
+				@media screen and (max-width: 768px) {
 					display: flex;
 					align-items: center;
 					gap: 2rem;
@@ -107,36 +98,10 @@
 				}
 			}
 		}
-		@media screen and (max-width: 1331px) {
-			gap: 9rem;
-		}
-		@media screen and (max-width: 1305px) {
-			gap: 8rem;
-		}
-		@media screen and (max-width: 1279px) {
-			gap: 7rem;
-		}	
-		@media screen and (max-width: 1253px) {
-			gap: 6rem;
-		}
-		@media screen and (max-width: 1227px) {
-			gap: 5rem;
-		}
-		@media screen and (max-width: 1071px) {
-			gap: 4rem;
-		}
-		@media screen and (max-width: 641px) {
-			margin: 0 auto;
-			padding-bottom: 3rem;
-			gap: 8rem;
-		}
-		@media screen and (max-width: 320px) {
-			gap: 5rem;
-		}
 	}
 
 	&__nav-bar {
-		@media screen and (max-width: 641px) {
+		@media screen and (max-width: 768px) {
 			width: 100%;
 			height: 100%;
 			background-color: white;
@@ -158,9 +123,9 @@
 			padding: 2rem;
 			justify-content: center;
 			@media screen and (max-width: 1071px) {
-				width: 70%;
+				width: 100%;
 			}
-			@media screen and (max-width: 641px) {
+			@media screen and (max-width: 768px) {
 				gap: 3rem;
 				padding: 0;
 				width: 100%;
@@ -169,8 +134,11 @@
 				align-items: center;
 			}
 			.links {
-				@media screen and (max-width: 641px) {
+				@media screen and (max-width: 768px) {
 					font-size: 2rem;
+				}
+				@media screen and (max-width: 1140px) {
+					padding: 0 3rem;
 				}
 				&:nth-child(1) {
 					align-items: center;
@@ -192,7 +160,7 @@
 		}
 		.menu-close {
 			display: none;
-			@media screen and (max-width: 641px) {
+			@media screen and (max-width: 768px) {
 				position: absolute;
 				top: 4%;
 				left: 4%;

@@ -43,15 +43,11 @@
 					font-weight: 400;
 				}
 				img {
-					width: 70%;
 					@media screen and (max-width: 768px) {
 						width: 100%;
 					}
 				}
 			}
-		}
-		img {
-			width: 70%;
 		}
 	}
 	background-color: #353535;

@@ -12,10 +12,14 @@
 		}
 		p {
 			font-weight: 400;
-			font-size: 14px;
+			font-size: 12px;
 			line-height: 21px;
 			color: #000000;
 			max-width: 420px;
+			margin-right: 64px;
+			@media screen and (max-width: 768px) {
+				margin-right: 0;
+			}
 		}
 	}
 	picture {
@@ -29,7 +33,11 @@
 			display: none;
 		}
 		img {
-			width: 82%;
+			max-width: 1114px;
+			border-radius: 5px;
+			@media screen and (max-width: 1140px) {
+				max-width: 100%;
+			}
 		}
 	}
 }
@@ -38,10 +46,6 @@
 @media screen and (max-width: 640px) {
 	.article {
 		&__banner{
-			width: 90%;
-			-webkit-box-orient: vertical;
-			-webkit-box-direction: normal;
-			-ms-flex-direction: column;
 			flex-direction: column;
 			gap: 3rem;
 			h2 {

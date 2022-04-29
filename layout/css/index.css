@@ -1,1422 +1,356 @@
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 7, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-html {
-  font-size: 62.5%;
-}
-
-/* line 10, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-body {
-  font-size: 1.6rem;
-  font-family: "Titillium Web", sans-serif;
-}
-
-/* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-/* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.container.newsletter__content, .container.footer-list {
-  max-width: 980px;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .container {
-    padding: 0 30px;
-  }
-}
-
-/* line 30, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-/* line 42, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.flex {
-  display: flex;
-  align-items: center;
-}
-
-/* line 47, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  visibility: hidden;
-  opacity: 0;
-}
-
-/* line 60, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  background-color: white;
-  position: relative;
-}
-
-/* line 61, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email {
-  display: -ms-grid;
-  display: grid;
-  margin: auto;
-  gap: 2.5rem;
-  width: 100%;
-}
-
-/* line 62, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email .modal-title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-/* line 68, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email .modal-title h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #464b54;
-}
-
-/* line 75, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email form {
-  display: -ms-grid;
-  display: grid;
-  gap: 1rem;
-  width: 75%;
-  margin: auto;
-}
-
-/* line 76, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email form .search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-/* line 89, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email form input {
-  padding: 1rem;
-  border: 0.1rem solid #c4c4c4;
-  border-radius: 0.7rem;
-}
-
-/* line 100, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email .text {
-  color: #787d83;
-  font-size: 2rem;
-  text-align: center;
-}
-
-/* line 104, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email .text p {
-  line-height: 2rem;
-}
-
-/* line 106, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .modal-email .text p span {
-  font-weight: 700;
-}
-
-/* line 119, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper .modal-content .close {
-  position: absolute;
-  top: -4%;
-  right: 0;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: white;
-  cursor: pointer;
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header {
-  background-color: white;
-}
-
-/* line 3, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__top {
-  background-color: #353535;
-  color: white;
-  font-size: 1.2rem;
-  margin-bottom: 3rem;
-  padding: 0.3rem;
-  text-align: center;
-}
-
-/* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header {
-  align-items: center;
-  display: flex;
-  margin-bottom: 2rem;
-  justify-content: space-between;
-}
-
-/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .icon-search {
-  align-items: center;
-  display: flex;
-  gap: 6rem;
-  width: 55%;
-}
-
-@media screen and (max-width: 1071px) {
-  /* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .icon-search {
-    gap: 4rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .icon-search {
-    gap: 2rem;
-  }
-}
-
-/* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .icon-search form {
-  position: relative;
-  width: 100%;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .icon-search form {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 34, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .icon-search form.show {
-    display: block;
-  }
-}
-
-/* line 39, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .icon-search form label {
-  border-width: 0;
-  clip: rect(0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* line 50, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .icon-search form input {
-  background-color: #efefef;
-  border: none;
-  border-radius: 0.7rem;
-  color: #353535;
-  padding: 1rem;
-  width: 100%;
-}
-
-/* line 58, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .icon-search form .search {
-  right: 0;
-  position: absolute;
-  width: 25%;
-}
-
-/* line 64, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .icon-search .menu-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 64, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .icon-search .menu-mobile {
-    display: block;
-    cursor: pointer;
-  }
-}
-
-/* line 72, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .right-options {
-  align-items: center;
-  display: flex;
-  gap: 3rem;
-}
-
-@media screen and (max-width: 1048px) {
-  /* line 72, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .right-options {
-    gap: 2rem;
-  }
-}
-
-/* line 80, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .right-options .option {
-  align-items: center;
-  display: flex;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 80, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .right-options .option {
-    display: none;
-  }
-}
-
-/* line 88, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .right-options .option:nth-child(4) {
-  border: 0.1rem solid #faa500;
-  border-radius: 0.7rem;
-  padding: 0.9rem;
-}
-
-/* line 93, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .right-options .option:hover {
-  color: #faa500;
-}
-
-/* line 97, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .right-options .options-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 97, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header .right-options .options-mobile {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-}
-
-/* line 104, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__header .right-options .options-mobile .close-search {
-  display: none;
-  width: 80%;
-}
-
-@media screen and (max-width: 1331px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 9rem;
-  }
-}
-
-@media screen and (max-width: 1305px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 8rem;
-  }
-}
-
-@media screen and (max-width: 1279px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 7rem;
-  }
-}
-
-@media screen and (max-width: 1253px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 6rem;
-  }
-}
-
-@media screen and (max-width: 1227px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 5rem;
-  }
-}
-
-@media screen and (max-width: 1071px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 4rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    margin: 0 auto;
-    padding-bottom: 3rem;
-    gap: 8rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  /* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__header {
-    gap: 5rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 138, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__nav-bar {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: -999px;
-    z-index: 2;
-    transition: ease .5s left;
-  }
-}
-
-/* line 149, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar.show {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-}
-
-/* line 155, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar .links-container {
-  align-items: center;
-  display: flex;
-  padding: 2rem;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1071px) {
-  /* line 155, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__nav-bar .links-container {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 155, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__nav-bar .links-container {
-    gap: 3rem;
-    padding: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-/* line 171, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar .links-container .links {
-  font-size: 1.4rem;
-  font-weight: 600;
-  list-style: none;
-  padding: 0 4rem;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 171, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__nav-bar .links-container .links {
-    font-size: 2rem;
-  }
-}
-
-/* line 175, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar .links-container .links:nth-child(1) {
-  align-items: center;
-  display: flex;
-  gap: 0.6rem;
-}
-
-/* line 184, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar .links-container .links a {
-  color: #353535;
-  text-decoration: none;
-}
-
-/* line 187, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar .links-container .links a:hover {
-  color: #faa500;
-}
-
-/* line 193, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__nav-bar .menu-close {
-  display: none;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 193, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-  .header__nav-bar .menu-close {
-    position: absolute;
-    top: 4%;
-    left: 4%;
-    cursor: pointer;
-    display: block;
-  }
-}
-
-/* line 205, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header.show {
-  gap: 7rem;
-  width: 95%;
-}
-
-/* line 210, C:/Users/caiou/Desktop/maeztra.local/scss/components/_header.scss */
-.header__line {
-  background-color: #efefef;
-  height: 0.3rem;
-  width: 100%;
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer {
-  background-color: #353535;
-  padding: 3rem;
-  width: 100%;
-}
-
-/* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-  .footer__container {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  /* line 9, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-  .footer__container img {
-    width: 100%;
-  }
-}
-
-/* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container .networking {
-  align-items: center;
-  display: flex;
-  gap: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-  .footer__container .networking {
-    gap: 2.5rem;
-  }
-}
-
-/* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container .payment-methods {
-  align-items: center;
-  display: flex;
-  gap: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-  .footer__container .payment-methods {
-    gap: 2.5rem;
-  }
-}
-
-/* line 29, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container .copyright {
-  align-items: center;
-  display: flex;
-  gap: 1.5rem;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 29, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-  .footer__container .copyright {
-    gap: 2.5rem;
-  }
-}
-
-/* line 36, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container .copyright .copyright-wrapper {
-  display: -ms-grid;
-  display: grid;
-  gap: 0.2rem;
-}
-
-/* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container .copyright .copyright-wrapper h4 {
-  color: white;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-/* line 45, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container .copyright .copyright-wrapper img {
-  width: 70%;
-}
-
-@media screen and (max-width: 768px) {
-  /* line 45, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-  .footer__container .copyright .copyright-wrapper img {
-    width: 100%;
-  }
-}
-
-/* line 53, C:/Users/caiou/Desktop/maeztra.local/scss/components/_footer.scss */
-.footer__container img {
-  width: 70%;
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-.newsletter {
-  border-bottom: 0.2rem solid #efefef;
-  border-top: 0.2rem solid #efefef;
-  margin-bottom: 3rem;
-  padding: 4rem;
-}
-
-@media screen and (max-width: 640px) {
-  /* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-  .newsletter {
-    background-color: #fafafa;
-    border-bottom: 0.4rem solid #efefef;
-    border-top: 0.4rem solid #efefef;
-    flex-direction: column;
-  }
-}
-
-/* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-.newsletter__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 1024px) {
-  /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-  .newsletter__content {
-    flex-direction: column;
-  }
-}
-
-/* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-.newsletter__form {
-  position: relative;
-  width: 100%;
-  max-width: 630px;
-}
-
-/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-.newsletter__form label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-/* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-.newsletter__form input {
-  padding: 1rem;
-  border: none;
-  border-radius: 0.7rem;
-  background-color: #efefef;
-  color: #353535;
-  width: 100%;
-}
-
-@media screen and (max-width: 640px) {
-  /* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-  .newsletter__form input {
-    width: 70%;
-    background-color: white;
-    border: 0.1rem solid #353535;
-  }
-}
-
-/* line 44, C:/Users/caiou/Desktop/maeztra.local/scss/components/_newsletter.scss */
-.newsletter__form .search {
-  position: absolute;
-  right: 0;
-  width: 25%;
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list {
-  margin-bottom: 5rem;
-}
-
-/* line 3, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list__container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-/* line 7, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list__container ul {
-  display: -ms-grid;
-  display: grid;
-  gap: 1.6rem;
-}
-
-/* line 11, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list__container ul::before {
-  content: attr(aria-label);
-  font-weight: 700;
-  font-size: 1.6rem;
-}
-
-/* line 16, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list__container ul .title-information {
-  display: none;
-}
-
-/* line 19, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list__container ul li {
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-/* line 22, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-.footer-list__container ul li:hover {
-  color: #faa500;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container {
-    width: 90%;
-    margin: auto;
-    flex-direction: column;
-  }
-  /* line 36, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul {
-    width: 100%;
-  }
-  /* line 38, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul::before {
-    content: none;
-  }
-  /* line 41, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul .title-information {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  /* line 45, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul .title-information h3 {
-    font-size: 1.6rem;
-  }
-  /* line 48, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul .title-information img {
-    cursor: pointer;
-  }
-  /* line 52, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul li {
-    display: none;
-  }
-  /* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_access.scss */
-  .footer-list__container ul li.show {
-    display: block;
-  }
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner {
-  margin-bottom: 2rem;
-}
-
-/* line 3, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-slide {
-  position: relative;
-}
-
-/* line 5, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-slide img {
-  width: 100%;
-}
-
-/* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-slide .texts {
-  position: absolute;
-  top: 23%;
-  left: 14%;
-  z-index: 1;
-  display: -ms-grid;
-  display: grid;
-  gap: 2rem;
-}
-
-@media screen and (max-width: 486px) {
-  /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts {
-    top: 17%;
-    left: 13%;
-    gap: 1rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  /* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts {
-    top: 17%;
-    gap: 0.7rem;
-  }
-}
-
-/* line 25, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-slide .texts h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: white;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 25, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts h1 {
-    width: 58%;
-    line-height: 4.5rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  /* line 25, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts h1 {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  /* line 25, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts h1 {
-    font-size: 3rem;
-  }
-}
-
-/* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-slide .texts p {
-  width: 70%;
-  font-size: 2rem;
-  color: white;
-}
-
-@media screen and (max-width: 375px) {
-  /* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts p {
-    font-size: 1.7rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  /* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-slide .texts p {
-    font-size: 1.5rem;
-  }
-}
-
-/* line 51, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-slide .texts .search {
-  width: 25%;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 58, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-pagination {
-    margin-bottom: 1rem;
-  }
-}
-
-/* line 63, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-pagination-bullet {
-  opacity: 1;
-  background-color: transparent;
-  border: 0.1rem solid #faa500;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 63, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-  .banner .swiper-pagination-bullet {
-    padding: 0.5rem;
-  }
-}
-
-/* line 71, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-pagination-bullet-active {
-  background-color: #faa500;
-}
-
-/* line 74, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-button-next {
-  color: black;
-}
-
-/* line 77, C:/Users/caiou/Desktop/maeztra.local/scss/components/_banner.scss */
-.banner .swiper-button-prev {
-  color: black;
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-.brands {
-  padding-bottom: 5rem;
-}
-
-/* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-.brands .brands-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.32rem;
-}
-
-@media screen and (max-width: 1180px) {
-  /* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-  .brands .brands-wrapper {
-    gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-  .brands .brands-wrapper {
-    display: none;
-  }
-}
-
-/* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-.brands .brands-wrapper img {
-  width: 15%;
-}
-
-/* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-.brands h2 {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 18, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-  .brands h2 {
-    font-size: 2.4rem;
-  }
-}
-
-/* line 27, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-.brands .swiper {
-  display: none;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 27, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-  .brands .swiper {
-    display: block;
-  }
-  /* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-  .brands .swiper .swiper-wrapper {
-    width: 90%;
-    margin: auto;
-  }
-}
-
-@media screen and (max-width: 641px) and (max-width: 486px) {
-  /* line 34, C:/Users/caiou/Desktop/maeztra.local/scss/components/_brands.scss */
-  .brands .swiper .swiper-wrapper img {
-    width: 90%;
-  }
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products {
-  margin-bottom: 5rem;
-}
-
-/* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-}
-
-/* line 7, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price {
-  display: -ms-grid;
-  display: grid;
-  gap: 0.5rem;
-}
-
-/* line 8, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price .colors {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-}
-
-/* line 12, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price .colors div {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 0.5rem;
-}
-
-/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price .colors div.beige {
-  background-color: #deac71;
-}
-
-/* line 20, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price .colors div.pink {
-  background-color: #d37164;
-}
-
-/* line 23, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price .colors div.light-blue {
-  background-color: #6497d3;
-}
-
-/* line 26, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price .colors div.dark-blue {
-  background-color: #3c3b79;
-}
-
-/* line 33, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price img {
-  width: 95%;
-}
-
-/* line 36, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .image-price p {
-  font-weight: 700;
-}
-
-/* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .description {
-  margin-bottom: 0.8rem;
-}
-
-/* line 42, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .description h3 {
-  font-size: 1.6rem;
-  font-weight: 400;
-}
-
-/* line 46, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .description small {
-  font-size: 1rem;
-  text-align: justify;
-  line-height: normal;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 46, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .product-container .product .description small {
-    font-size: 1.2rem;
-  }
-}
-
-/* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .product-container .product .search {
-  width: 80%;
-  text-align: center;
-  padding: 0;
-  border-radius: 0.4rem;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .product-container .product .search {
-    width: 65%;
-    padding: 0.7rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 68, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper {
-    width: 85%;
-  }
-}
-
-/* line 73, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .swiper-wrapper {
-  display: flex;
-  gap: 0.3rem;
-}
-
-/* line 77, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .swiper-button-next {
-  color: black;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 77, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper-button-next {
-    display: none;
-  }
-}
-
-/* line 83, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-section.products .swiper-button-prev {
-  color: black;
-}
-
-@media screen and (max-width: 641px) {
-  /* line 83, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper-button-prev {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 641px) and (max-width: 590px) {
-  /* line 95, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper .product-container {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 641px) and (max-width: 425px) {
-  /* line 105, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  /* line 113, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper {
-    width: 84%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  /* line 121, C:/Users/caiou/Desktop/maeztra.local/scss/components/_products.scss */
-  section.products .swiper {
-    width: 95%;
-  }
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra {
-  margin-bottom: 5rem;
-}
-
-/* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra .feature-container {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1180px) {
-  /* line 2, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .feature-container {
-    display: none;
-  }
-}
-
-/* line 10, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra .feature-container .feature {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  background-color: #efefef;
-  padding: 0.8rem;
-  border-radius: 0.7rem;
-}
-
-/* line 17, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra .feature-container .feature h3 {
-  font-size: 1.3rem;
-}
-
-/* line 20, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra .feature-container .feature p {
-  font-size: 1.1rem;
-}
-
-/* line 26, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra h2 {
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-/* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-.features-maeztra .swiper {
-  display: none;
-}
-
-@media screen and (max-width: 1180px) {
-  /* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper {
-    display: block;
-    width: 85%;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 32, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  /* line 42, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-wrapper .feature {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    background-color: #efefef;
-    padding: 0.8rem;
-    border-radius: 0.7rem;
-    width: 90%;
-    margin: auto;
-  }
-  /* line 52, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-wrapper .feature h3 {
-    font-size: 1.3rem;
-  }
-  /* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-wrapper .feature p {
-    font-size: 1.1rem;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  /* line 62, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-button-next {
-    color: black;
-  }
-  /* line 65, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-button-next::after {
-    font-size: 2rem;
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 62, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-button-next {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1180px) {
-  /* line 74, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-button-prev {
-    color: black;
-    left: 0;
-  }
-  /* line 78, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-button-prev::after {
-    font-size: 2rem;
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 74, C:/Users/caiou/Desktop/maeztra.local/scss/components/_features.scss */
-  .features-maeztra .swiper .swiper-button-prev {
-    display: none;
-  }
-}
-
-/* line 1, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article {
-  margin-bottom: 5rem;
-}
-
-/* line 3, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article__banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* line 7, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article__banner h2 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 56px;
-  color: #000000;
-}
-
-/* line 13, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article__banner p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #000000;
-  max-width: 420px;
-}
-
-/* line 21, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* line 25, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article picture h2 {
-  display: none;
-}
-
-/* line 28, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article picture p {
-  display: none;
-}
-
-/* line 31, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-.article picture img {
-  width: 82%;
-}
-
-@media screen and (max-width: 640px) {
-  /* line 40, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-  .article__banner {
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  /* line 47, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-  .article__banner h2 {
-    display: block;
-    font-size: 2.4rem;
-  }
-  /* line 51, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-  .article__banner p {
-    display: block;
-    text-align: justify;
-  }
-  /* line 55, C:/Users/caiou/Desktop/maeztra.local/scss/components/_article.scss */
-  .article__banner img {
-    width: 100%;
-  }
-}
-
-/* line 157, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.search {
-  background-color: #faa500;
-  color: white;
-  padding: 1rem;
-  border: none;
-  border-radius: 0.7rem;
-  cursor: pointer;
-}
-
-/* line 165, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-li {
-  list-style: none;
-}
-
-/* line 169, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-.modal-wrapper.show {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-@media screen and (max-width: 1135px) {
-  /* line 179, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  html {
-    font-size: 60.5%;
-    font-size: 58.5%;
-  }
-}
-
-@media screen and (max-width: 641px) {
-  /* line 187, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  html {
-    font-size: 60%;
-  }
-  /* line 193, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .line {
-    display: none;
-  }
-  /* line 198, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .modal-wrapper .modal-content {
-    width: 90%;
-    padding: 4rem;
-    -ms-grid-columns: none;
-    grid-template-columns: none;
-  }
-  /* line 203, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .modal-wrapper .modal-content .close {
-    top: -7%;
-  }
-  /* line 206, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .modal-wrapper .modal-content img.banner-modal {
-    display: none;
-  }
-  /* line 209, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .modal-wrapper .modal-content .modal-email {
-    gap: 3rem;
-  }
-  /* line 211, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  .modal-wrapper .modal-content .modal-email form {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 486px) {
-  /* line 220, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  html {
-    font-size: 58%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  /* line 225, C:/Users/caiou/Desktop/maeztra.local/scss/index.scss */
-  html {
-    font-size: 56%;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-box-sizing: border-box; }
+
+html { font-size: 62.5%; }
+
+body { font-size: 1.6rem; font-family: "Titillium Web", sans-serif; }
+
+.container { margin: 0 auto; max-width: 1600px; padding: 0 30px; }
+
+.container.newsletter__content, .container.footer-list { max-width: 980px; }
+
+@media screen and (max-width: 768px) { .container { padding: 0 30px; } }
+
+.sr-only { border-width: 0; clip: rect(0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; width: 1px; }
+
+.flex { align-items: center; display: flex; }
+
+.modal-wrapper { align-items: center; background-color: rgba(0, 0, 0, 0.7); display: flex; height: 100%; justify-content: center; left: 0; opacity: 0; position: fixed; top: 0; visibility: hidden; width: 100%; z-index: 10; }
+
+.modal-wrapper .modal-content { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; margin: auto; background-color: white; position: relative; }
+
+.modal-wrapper .modal-content .modal-email { display: -ms-grid; display: grid; margin: auto; gap: 2.5rem; width: 100%; }
+
+.modal-wrapper .modal-content .modal-email .modal-title { align-items: center; display: flex; flex-direction: column; gap: 1.5rem; justify-content: center; }
+
+.modal-wrapper .modal-content .modal-email .modal-title h2 { font-size: 1.2rem; font-weight: 400; text-transform: uppercase; color: #464b54; }
+
+.modal-wrapper .modal-content .modal-email form { display: -ms-grid; display: grid; gap: 1rem; width: 75%; margin: auto; }
+
+.modal-wrapper .modal-content .modal-email form .search { display: flex; align-items: center; justify-content: center; gap: 0.6rem; text-transform: uppercase; font-weight: 700; }
+
+.modal-wrapper .modal-content .modal-email form input { padding: 1rem; border: 0.1rem solid #c4c4c4; border-radius: 0.7rem; }
+
+.modal-wrapper .modal-content .modal-email .text { color: #787d83; font-size: 2rem; text-align: center; }
+
+.modal-wrapper .modal-content .modal-email .text p { line-height: 2rem; }
+
+.modal-wrapper .modal-content .modal-email .text p span { font-weight: 700; }
+
+.modal-wrapper .modal-content .close { position: absolute; top: -4%; right: 0; font-size: 1.2rem; text-transform: uppercase; color: white; cursor: pointer; }
+
+.header { background-color: white; }
+
+.header__top { background-color: #353535; color: white; font-size: 1.2rem; margin-bottom: 3rem; padding: 0.3rem; text-align: center; }
+
+.header__header { align-items: center; display: flex; margin-bottom: 2rem; justify-content: space-between; }
+
+.header__header .icon-search { align-items: center; display: flex; gap: 6rem; width: 55%; }
+
+.header__header .icon-search form { position: relative; width: 100%; }
+
+@media screen and (max-width: 768px) { .header__header .icon-search form { display: none; } }
+
+@media screen and (max-width: 768px) { .header__header .icon-search form.show { display: block; } }
+
+.header__header .icon-search form label { border-width: 0; clip: rect(0, 0, 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; white-space: nowrap; width: 1px; }
+
+.header__header .icon-search form input { background-color: #efefef; border: none; border-radius: 0.7rem; color: #353535; padding: 1rem; width: 100%; }
+
+.header__header .icon-search form .search { right: 0; position: absolute; width: 25%; }
+
+.header__header .icon-search .menu-mobile { display: none; }
+
+@media screen and (max-width: 768px) { .header__header .icon-search .menu-mobile { display: block; cursor: pointer; } }
+
+.header__header .right-options { align-items: center; display: flex; gap: 3rem; }
+
+.header__header .right-options .option { align-items: center; display: flex; gap: 0.5rem; cursor: pointer; }
+
+@media screen and (max-width: 768px) { .header__header .right-options .option { display: none; } }
+
+.header__header .right-options .option:nth-child(4) { border: 0.1rem solid #faa500; border-radius: 0.7rem; padding: 0.9rem; }
+
+.header__header .right-options .option:hover { color: #faa500; }
+
+.header__header .right-options .options-mobile { display: none; }
+
+@media screen and (max-width: 768px) { .header__header .right-options .options-mobile { display: flex; align-items: center; gap: 2rem; } }
+
+.header__header .right-options .options-mobile .close-search { display: none; width: 80%; }
+
+@media screen and (max-width: 768px) { .header__nav-bar { width: 100%; height: 100%; background-color: white; position: fixed; top: 0; left: -999px; z-index: 2; transition: ease .5s left; } }
+
+.header__nav-bar.show { display: flex; justify-content: center; align-items: center; left: 0; }
+
+.header__nav-bar .links-container { align-items: center; display: flex; padding: 2rem; justify-content: center; }
+
+@media screen and (max-width: 1071px) { .header__nav-bar .links-container { width: 100%; } }
+
+@media screen and (max-width: 768px) { .header__nav-bar .links-container { gap: 3rem; padding: 0; width: 100%; flex-direction: column; justify-content: center; align-items: center; } }
+
+.header__nav-bar .links-container .links { font-size: 1.4rem; font-weight: 600; list-style: none; padding: 0 4rem; }
+
+@media screen and (max-width: 768px) { .header__nav-bar .links-container .links { font-size: 2rem; } }
+
+@media screen and (max-width: 1140px) { .header__nav-bar .links-container .links { padding: 0 3rem; } }
+
+.header__nav-bar .links-container .links:nth-child(1) { align-items: center; display: flex; gap: 0.6rem; }
+
+.header__nav-bar .links-container .links a { color: #353535; text-decoration: none; }
+
+.header__nav-bar .links-container .links a:hover { color: #faa500; }
+
+.header__nav-bar .menu-close { display: none; }
+
+@media screen and (max-width: 768px) { .header__nav-bar .menu-close { position: absolute; top: 4%; left: 4%; cursor: pointer; display: block; } }
+
+.header.show { gap: 7rem; width: 95%; }
+
+.header__line { background-color: #efefef; height: 0.3rem; width: 100%; }
+
+.footer { background-color: #353535; padding: 3rem; width: 100%; }
+
+.footer__container { align-items: center; display: flex; justify-content: space-between; }
+
+@media screen and (max-width: 768px) { .footer__container { flex-direction: column; gap: 2.5rem; }
+  .footer__container img { width: 100%; } }
+
+.footer__container .networking { align-items: center; display: flex; gap: 1.5rem; }
+
+@media screen and (max-width: 768px) { .footer__container .networking { gap: 2.5rem; } }
+
+.footer__container .payment-methods { align-items: center; display: flex; gap: 1.5rem; }
+
+@media screen and (max-width: 768px) { .footer__container .payment-methods { gap: 2.5rem; } }
+
+.footer__container .copyright { align-items: center; display: flex; gap: 1.5rem; }
+
+@media screen and (max-width: 768px) { .footer__container .copyright { gap: 2.5rem; } }
+
+.footer__container .copyright .copyright-wrapper { display: -ms-grid; display: grid; gap: 0.2rem; }
+
+.footer__container .copyright .copyright-wrapper h4 { color: white; font-size: 1rem; font-weight: 400; }
+
+@media screen and (max-width: 768px) { .footer__container .copyright .copyright-wrapper img { width: 100%; } }
+
+.newsletter { border-bottom: 0.2rem solid #efefef; border-top: 0.2rem solid #efefef; margin-bottom: 3rem; padding: 4rem; }
+
+@media screen and (max-width: 640px) { .newsletter { background-color: #fafafa; border-bottom: 0.4rem solid #efefef; border-top: 0.4rem solid #efefef; flex-direction: column; } }
+
+.newsletter__content { display: flex; align-items: center; justify-content: space-between; }
+
+@media screen and (max-width: 1024px) { .newsletter__content { flex-direction: column; padding: 0; } }
+
+.newsletter__form { position: relative; width: 100%; max-width: 630px; }
+
+.newsletter__form label { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0); white-space: nowrap; border-width: 0; }
+
+.newsletter__form input { padding: 1rem; border: none; border-radius: 0.7rem; background-color: #efefef; color: #353535; width: 100%; }
+
+@media screen and (max-width: 640px) { .newsletter__form input { width: 70%; background-color: white; border: 0.1rem solid #353535; } }
+
+.newsletter__form .search { position: absolute; right: 0; width: 25%; }
+
+.footer-list { margin-bottom: 5rem; }
+
+.footer-list__container { display: flex; align-items: flex-start; justify-content: space-between; }
+
+.footer-list__container ul { display: -ms-grid; display: grid; gap: 1.6rem; }
+
+.footer-list__container ul::before { content: attr(aria-label); font-weight: 700; font-size: 1.6rem; }
+
+.footer-list__container ul .title-information { display: none; }
+
+.footer-list__container ul li { font-size: 1.2rem; cursor: pointer; }
+
+.footer-list__container ul li:hover { color: #faa500; }
+
+@media screen and (max-width: 768px) { .footer-list__container { width: 90%; margin: auto; flex-direction: column; }
+  .footer-list__container ul { width: 100%; }
+  .footer-list__container ul::before { content: none; }
+  .footer-list__container ul .title-information { display: flex; justify-content: space-between; align-items: center; }
+  .footer-list__container ul .title-information h3 { font-size: 1.6rem; }
+  .footer-list__container ul .title-information img { cursor: pointer; }
+  .footer-list__container ul li { display: none; }
+  .footer-list__container ul li.show { display: block; } }
+
+.banner { margin-bottom: 2rem; }
+
+.banner .swiper-slide { position: relative; }
+
+.banner .swiper-slide img { width: 100%; }
+
+.banner .swiper-slide .texts { position: absolute; top: 23%; left: 14%; z-index: 1; display: -ms-grid; display: grid; gap: 2rem; }
+
+@media screen and (max-width: 486px) { .banner .swiper-slide .texts { top: 17%; left: 13%; gap: 1rem; } }
+
+@media screen and (max-width: 320px) { .banner .swiper-slide .texts { top: 17%; gap: 0.7rem; } }
+
+.banner .swiper-slide .texts h1 { font-size: 4rem; font-weight: 700; color: white; }
+
+@media screen and (max-width: 768px) { .banner .swiper-slide .texts h1 { width: 58%; line-height: 4.5rem; } }
+
+@media screen and (max-width: 375px) { .banner .swiper-slide .texts h1 { font-size: 3.5rem; } }
+
+@media screen and (max-width: 320px) { .banner .swiper-slide .texts h1 { font-size: 3rem; } }
+
+.banner .swiper-slide .texts p { width: 70%; font-size: 2rem; color: white; }
+
+@media screen and (max-width: 375px) { .banner .swiper-slide .texts p { font-size: 1.7rem; } }
+
+@media screen and (max-width: 320px) { .banner .swiper-slide .texts p { font-size: 1.5rem; } }
+
+.banner .swiper-slide .texts .search { width: 25%; font-size: 1.4rem; font-weight: 700; }
+
+@media screen and (max-width: 768px) { .banner .swiper-pagination { margin-bottom: 1rem; } }
+
+.banner .swiper-pagination-bullet { opacity: 1; background-color: transparent; border: 0.1rem solid #faa500; }
+
+@media screen and (max-width: 768px) { .banner .swiper-pagination-bullet { padding: 0.5rem; } }
+
+.banner .swiper-pagination-bullet-active { background-color: #faa500; }
+
+.banner .swiper-button-next { color: black; }
+
+.banner .swiper-button-prev { color: black; }
+
+.brands { padding-bottom: 5rem; }
+
+.brands .brands-wrapper { display: flex; align-items: center; justify-content: center; gap: 2.32rem; }
+
+@media screen and (max-width: 1180px) { .brands .brands-wrapper { gap: 2rem; } }
+
+@media screen and (max-width: 768px) { .brands .brands-wrapper { display: none; } }
+
+.brands .brands-wrapper img { width: 15%; }
+
+.brands h2 { text-align: center; font-size: 1.6rem; font-weight: 700; margin-bottom: 2rem; }
+
+@media screen and (max-width: 768px) { .brands h2 { font-size: 2.4rem; } }
+
+.brands .swiper { display: none; }
+
+@media screen and (max-width: 768px) { .brands .swiper { display: block; }
+  .brands .swiper .swiper-wrapper { width: 90%; margin: auto; } }
+
+@media screen and (max-width: 768px) and (max-width: 486px) { .brands .swiper .swiper-wrapper img { width: 90%; } }
+
+section.products { margin-bottom: 5rem; }
+
+@media screen and (max-width: 768px) { section.products { padding: 0; } }
+
+section.products .product-container { display: flex; align-items: center; gap: 5rem; }
+
+section.products .product-container .product .image-price { display: -ms-grid; display: grid; gap: 0.5rem; }
+
+section.products .product-container .product .image-price .colors { display: flex; align-items: center; gap: 0.3rem; }
+
+section.products .product-container .product .image-price .colors div { height: 2rem; width: 2rem; border-radius: 0.5rem; }
+
+section.products .product-container .product .image-price .colors div.beige { background-color: #deac71; }
+
+section.products .product-container .product .image-price .colors div.pink { background-color: #d37164; }
+
+section.products .product-container .product .image-price .colors div.light-blue { background-color: #6497d3; }
+
+section.products .product-container .product .image-price .colors div.dark-blue { background-color: #3c3b79; }
+
+section.products .product-container .product .image-price img { width: 95%; }
+
+section.products .product-container .product .image-price p { font-weight: 700; }
+
+section.products .product-container .product .description { margin-bottom: 0.8rem; }
+
+section.products .product-container .product .description h3 { font-size: 1.6rem; font-weight: 400; }
+
+section.products .product-container .product .description small { font-size: 1rem; text-align: justify; line-height: normal; }
+
+@media screen and (max-width: 768px) { section.products .product-container .product .description small { font-size: 1.2rem; } }
+
+section.products .product-container .product .search { width: 80%; text-align: center; padding: 0; border-radius: 0.4rem; }
+
+@media screen and (max-width: 768px) { section.products .product-container .product .search { width: 65%; padding: 0.7rem; } }
+
+section.products .swiper-wrapper { display: flex; gap: 0.3rem; }
+
+section.products .swiper-button-next { color: black; }
+
+@media screen and (max-width: 768px) { section.products .swiper-button-next { display: none; } }
+
+section.products .swiper-button-prev { color: black; }
+
+@media screen and (max-width: 768px) { section.products .swiper-button-prev { display: none; } }
+
+@media screen and (max-width: 768px) and (max-width: 590px) { section.products .swiper .product-container { display: flex; justify-content: center; } }
+
+.features-maeztra { margin-bottom: 5rem; }
+
+.features-maeztra .feature-container { display: flex; align-items: center; gap: 2rem; justify-content: center; }
+
+@media screen and (max-width: 1180px) { .features-maeztra .feature-container { display: none; } }
+
+.features-maeztra .feature-container .feature { display: flex; align-items: center; gap: 1.5rem; background-color: #efefef; padding: 0.8rem; border-radius: 0.7rem; }
+
+.features-maeztra .feature-container .feature h3 { font-size: 1.3rem; }
+
+.features-maeztra .feature-container .feature p { font-size: 1.1rem; }
+
+.features-maeztra h2 { text-align: center; font-size: 1.6rem; font-weight: 700; margin-bottom: 2rem; }
+
+.features-maeztra .swiper { display: none; }
+
+@media screen and (max-width: 1180px) { .features-maeztra .swiper { display: block; width: 85%; } }
+
+@media screen and (max-width: 768px) { .features-maeztra .swiper { width: 100%; } }
+
+@media screen and (max-width: 1180px) { .features-maeztra .swiper .swiper-wrapper .feature { display: flex; align-items: center; gap: 1.5rem; background-color: #efefef; padding: 0.8rem; border-radius: 0.7rem; width: 90%; margin: auto; }
+  .features-maeztra .swiper .swiper-wrapper .feature h3 { font-size: 1.3rem; }
+  .features-maeztra .swiper .swiper-wrapper .feature p { font-size: 1.1rem; } }
+
+@media screen and (max-width: 1180px) { .features-maeztra .swiper .swiper-button-next { color: black; }
+  .features-maeztra .swiper .swiper-button-next::after { font-size: 2rem; font-size: 2rem; } }
+
+@media screen and (max-width: 768px) { .features-maeztra .swiper .swiper-button-next { display: none; } }
+
+@media screen and (max-width: 1180px) { .features-maeztra .swiper .swiper-button-prev { color: black; left: 0; }
+  .features-maeztra .swiper .swiper-button-prev::after { font-size: 2rem; font-size: 2rem; } }
+
+@media screen and (max-width: 768px) { .features-maeztra .swiper .swiper-button-prev { display: none; } }
+
+.article { margin-bottom: 5rem; }
+
+.article__banner { display: flex; align-items: center; justify-content: center; }
+
+.article__banner h2 { font-weight: 700; font-size: 24px; line-height: 56px; color: #000000; }
+
+.article__banner p { font-weight: 400; font-size: 12px; line-height: 21px; color: #000000; max-width: 420px; margin-right: 64px; }
+
+@media screen and (max-width: 768px) { .article__banner p { margin-right: 0; } }
+
+.article picture { display: flex; align-items: center; justify-content: center; }
+
+.article picture h2 { display: none; }
+
+.article picture p { display: none; }
+
+.article picture img { max-width: 1114px; border-radius: 5px; }
+
+@media screen and (max-width: 1140px) { .article picture img { max-width: 100%; } }
+
+@media screen and (max-width: 640px) { .article__banner { flex-direction: column; gap: 3rem; }
+  .article__banner h2 { display: block; font-size: 2.4rem; }
+  .article__banner p { display: block; text-align: justify; }
+  .article__banner img { width: 100%; } }
+
+.search { background-color: #faa500; color: white; padding: 1rem; border: none; border-radius: 0.7rem; cursor: pointer; }
+
+li { list-style: none; }
+
+.modal-wrapper.show { visibility: visible; opacity: 1; -webkit-transition: 1s; transition: 1s; }
+
+@media screen and (max-width: 768px) { .line { display: none; }
+  .modal-wrapper .modal-content { width: 90%; padding: 4rem; -ms-grid-columns: none; grid-template-columns: none; }
+  .modal-wrapper .modal-content .close { top: -7%; }
+  .modal-wrapper .modal-content img.banner-modal { display: none; }
+  .modal-wrapper .modal-content .modal-email { gap: 3rem; }
+  .modal-wrapper .modal-content .modal-email form { width: 90%; } }
