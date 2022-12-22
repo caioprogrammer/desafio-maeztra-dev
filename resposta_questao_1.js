@@ -12,19 +12,23 @@ const array = [
   '1599'
 ];
 
-for (let i in array) {
-  let valor = array[i].split(',').map(Number);
-  let ordem = true;
-  for (let item = 0; item < valor.length - 1; item++) {
-    if (valor[item] > valor[item + 1]) {
-      ordem = false;
-      break;
+function verifyOrder(item) {
+  for (let i in item) {
+    let valor = item[i].split(',').map(Number);
+    let ordem = true;
+    for (let item = 0; item < valor.length - 1; item++) {
+      if (valor[item] > valor[item + 1]) {
+        ordem = false;
+        break;
+      }
+    }
+  
+    if (ordem === true) {
+      console.log(`Este item ${valor} ==> Está ordenado`);
+    } else {
+      console.log(`Este item ${valor} ==> Não está ordenado`);
     }
   }
-
-  if (ordem === true) {
-    // console.log(`Este item ${valor} ==> Está ordenado`);
-  } else {
-    // console.log(`Este item ${valor} ==> Não está ordenado`);
-  }
 }
+
+verifyOrder(array)

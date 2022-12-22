@@ -1,9 +1,10 @@
-const numbers = [3, 5, 5, 1, 65, 27, 17, 17, 12, 8, 8, 7, 54, 87];
+const numbers = [4,5,44,98,4,5,6,7];
 
-const duplicatas = (num) => {
+function verifyDuplicatedNumbers(num) {
   let sortNumbers = num.sort((a, b) => a - b);
-  return sortNumbers.filter((item, index) => sortNumbers.indexOf(item) != index);
+  const duplicatedNumbers = sortNumbers.filter((item, index) => sortNumbers.indexOf(item) != index);
+  console.log(duplicatedNumbers)
 };
 
 //valores retornados
-console.log(duplicatas(numbers));
+verifyDuplicatedNumbers(numbers)
